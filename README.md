@@ -6,7 +6,7 @@ We are gonna use the proper color scheme using css variables and official images
 
 Colors:
 
-1. rgb(20, 20, 20); - background color
+1. rgb(20, 20, 20) - background color
 2. #fff - text color
 
 Typography:
