@@ -111,3 +111,30 @@
 .content img {
   width: 100%;
 }
+
+.content-row .rank {
+  height: 150px;
+  position: relative;
+}
+
+.content-row .rank svg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  top: 0;
+  right: auto;
+  margin: 0 -1px;
+  width: 50%;
+}
+
+.content-row .rank img {
+  position: absolute;
+  bottom: 0;
+  height: 100%;
+  left: auto;
+  object-fit: cover;
+  right: 0;
+  top: 0;
+  width: 50%;
+  cursor: pointer;
+}
