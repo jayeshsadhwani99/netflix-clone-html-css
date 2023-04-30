@@ -5,7 +5,7 @@ nav {
   justify-content: space-between;
   gap: 10px;
   width: 100%;
-  padding: 1.5rem 4rem;
+  padding: 1.5vw 4vw;
   font-size: 0.8rem;
   transition: 0.5s;
   z-index: 1000;
@@ -25,7 +25,7 @@ nav {
 }
 
 .nav-items {
-  margin-left: 2rem;
+  margin-left: 2vw;
   list-style-type: none;
   display: flex;
   gap: 20px;
@@ -40,7 +40,7 @@ nav {
 }
 
 .nav-icons {
-  margin-left: 2rem;
+  margin-left: 2vw;
   list-style-type: none;
   display: flex;
   align-items: center;
@@ -51,4 +51,23 @@ nav {
   display: flex;
   align-items: center;
   gap: 8px;
+}
+
+.small-screen {
+  display: none;
+}
+
+@media (max-width: 800px) {
+  .small-screen {
+    display: block;
+    padding-left: 1vw;
+  }
+
+  .nav-items {
+    display: none;
+  }
+
+  .hide-when-small {
+    display: none !important;
+  }
 }

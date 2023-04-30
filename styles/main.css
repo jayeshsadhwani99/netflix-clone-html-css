@@ -16,6 +16,7 @@ main {
   top: 0;
   left: 0;
   width: 100vw;
+  height: 56.25vw;
 }
 
 .trailing-vigentte {
@@ -37,18 +38,18 @@ main {
 }
 
 .title {
-  margin: 1rem 0;
-  font-size: 1.6rem;
+  margin: 1vw 0;
+  font-size: 1.6vw;
 }
 
 .description {
-  font-size: 1.2rem;
+  font-size: 1.2vw;
 }
 
 .buttons {
   display: flex;
   gap: 10px;
-  margin-top: 1rem;
+  margin-top: 1vw;
 }
 
 #more-info {
@@ -89,7 +90,7 @@ main {
 }
 
 .content-row {
-  margin: 3rem 0;
+  margin: 3vw 0;
   z-index: 1;
 }
 
@@ -142,4 +143,10 @@ main {
   top: 0;
   width: 50%;
   cursor: pointer;
+}
+
+@media (max-width: 500px) {
+  /* .billboard {
+    bottom: 55%;
+  } */
 }
