@@ -6,7 +6,7 @@ nav {
   gap: 10px;
   width: 100%;
   padding: 1.5vw 4vw;
-  font-size: 0.8rem;
+  font-size: 1.2vw;
   transition: 0.5s;
   z-index: 1000;
 }
