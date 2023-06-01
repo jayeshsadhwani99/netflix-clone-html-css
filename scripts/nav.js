@@ -1,10 +1,9 @@
-const navbar = document.querySelector("nav");
+const nav = document.getElementsByTagName("nav")[0];
 
 window.addEventListener("scroll", () => {
-  // Check the scroll position and add or remove the 'scrolled' class
   if (window.scrollY > 10) {
-    navbar.classList.add("scrolled");
+    nav.classList.add("nav-dark");
   } else {
-    navbar.classList.remove("scrolled");
+    nav.classList.remove("nav-dark");
   }
 });

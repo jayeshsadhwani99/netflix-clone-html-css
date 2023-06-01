@@ -1,8 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap");
 
 :root {
   --background-color: rgb(20, 20, 20);
-  --text-color: #fff;
+  --text-color: white;
 }
 
 * {
@@ -11,50 +11,41 @@
   box-sizing: border-box;
 }
 
-html {
-  font-family: "Open Sans", sans-serif;
-  scroll-behavior: smooth;
-}
-
 body {
+  font-family: "Open Sans", sans-serif;
   background-color: var(--background-color);
   color: var(--text-color);
-  overflow-x: hidden;
 }
 
 img {
   max-width: 100%;
 }
 
+button {
+  border: none;
+  display: flex;
+  padding: 0.75vw 1.5vw;
+  border-radius: 5px;
+  font-size: 1.2vw;
+  font-weight: bold;
+  gap: 10px;
+  align-items: center;
+  cursor: pointer;
+}
+
 a {
-  font-size: 0.8vw;
   text-decoration: none;
-  color: var(--link-color);
+  color: gray;
+  font-size: 0.8vw;
 }
 
 a:hover {
   text-decoration: underline;
 }
 
-li {
-  list-style-type: none;
-}
-
-.bold {
-  font-weight: 700;
-}
-
-.semibold {
-  font-weight: 500;
-}
-
-.small {
-  font-size: 0.75vw;
-}
-
 .row {
   display: flex;
-  flex-direction: row;
+  align-items: center;
 }
 
 .column {
@@ -62,24 +53,27 @@ li {
   flex-direction: column;
 }
 
-button {
-  border: none;
-  display: flex;
-  align-items: center;
-  padding: 0.75vw 1.5vw;
-  gap: 10px;
-  font-weight: bold;
-  font-size: 1.2vw;
-  border-radius: 5px;
-  cursor: pointer;
+.title {
+  font-weight: 700;
+  font-size: 1.6vw;
+  margin: 1vw 0;
 }
 
-button:hover {
-  background-color: rgba(255, 255, 255, 0.75);
+.description {
+  font-size: 1.2vw;
 }
 
 @media (max-width: 800px) {
-  h2 {
-    font-size: 12px;
+  .title {
+    font-size: 3vw;
+  }
+
+  .description {
+    font-size: 1.5vw;
+  }
+
+  button {
+    font-size: 2vw;
+    gap: 5px;
   }
 }

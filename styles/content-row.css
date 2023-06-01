@@ -1,0 +1,55 @@
+.content-row {
+  margin: 3vw 0;
+  padding: 0 4%;
+  gap: 0.5vw;
+}
+
+.content {
+  width: 16vw;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.content img {
+  max-width: 100%;
+  cursor: pointer;
+}
+
+.slider {
+  overflow-x: scroll;
+  white-space: nowrap;
+  display: inline-block;
+}
+
+.rank {
+  height: 150px;
+  position: relative;
+}
+
+.rank svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: auto;
+  bottom: 0;
+  width: 50%;
+}
+
+.rank img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: auto;
+  width: 50%;
+  height: 100%;
+  background-size: cover;
+  object-fit: cover;
+}
+
+@media (max-width: 800px) {
+  .content {
+    width: 50%;
+    margin-right: 0;
+  }
+}

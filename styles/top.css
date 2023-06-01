@@ -1,0 +1,96 @@
+.top {
+  height: 56.25vw;
+  width: 100vw;
+  position: relative;
+}
+
+.bg-image {
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+}
+
+.dark-left {
+  background: linear-gradient(77deg, rgba(0, 0, 0, 0.6), transparent 85%);
+  position: absolute;
+  top: 0;
+  right: 27%;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.dark-bottom {
+  background: linear-gradient(
+    180deg,
+    hsla(0, 0%, 8%, 0) 0,
+    hsla(0, 0%, 8%, 0.15) 15%,
+    hsla(0, 0%, 8%, 0.35) 29%,
+    hsla(0, 0%, 8%, 0.58) 44%,
+    #141414 68%,
+    #141414
+  );
+
+  position: absolute;
+  bottom: -30px;
+  height: 15vw;
+  opacity: 1;
+  width: 100%;
+  z-index: -1;
+}
+
+.billboard {
+  position: absolute;
+  width: 36%;
+  left: 4%;
+  bottom: 28%;
+}
+
+.billboard img {
+  max-width: 100%;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 1vw;
+}
+
+.info-btn {
+  background-color: rgba(109, 109, 110, 0.7);
+  color: white;
+}
+
+.play-btn:hover {
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+.info-btn:hover {
+  background-color: rgba(109, 109, 110, 0.4);
+}
+
+.top .content-row {
+  margin-top: 0;
+  padding-top: 43%;
+}
+
+@media (max-width: 800px) {
+  .top {
+    height: 80vw;
+  }
+
+  .billboard {
+    bottom: 45%;
+  }
+
+  .top .content-row {
+    margin-top: 0;
+    padding-top: 50%;
+  }
+
+  .play-btn i {
+    font-size: 3vw;
+  }
+}
